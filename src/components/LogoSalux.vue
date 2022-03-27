@@ -18,4 +18,7 @@
   width: 385px;
   /* margin-left: 20px; */
 }
+.figure{
+  margin: -50px 0px 0px 0px;
+}
 </style>

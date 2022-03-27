@@ -15,7 +15,7 @@
   font-size: 35px;
   font-weight: 900;
   line-height: 1.2;
-  margin: 87px 50px 0px 0px;
+  margin: 40px 120px 0px 0px;
   /* max-height: 300px;
   max-width: 300px; */
   /* margin-left: 20px; */
