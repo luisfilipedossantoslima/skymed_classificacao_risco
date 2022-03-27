@@ -14,8 +14,8 @@
   color: #0d1e35;
   font-size: 35px;
   font-weight: 900;
-  line-height: 3.2;
-  margin: 52px 220px 0px 0px;
+  line-height: 1.2;
+  margin: 87px 50px 0px 0px;
   /* max-height: 300px;
   max-width: 300px; */
   /* margin-left: 20px; */
