@@ -14,7 +14,7 @@
 .imagem{
   /* max-height: 300px;
   max-width: 300px; */
-  height: 200px;
+  height: 100px;
   width: 385px;
   /* margin-left: 20px; */
 }
