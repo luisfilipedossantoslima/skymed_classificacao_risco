@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import Home from '@/components/Home.vue'
-import Rodape from '../components/Rodape.vue'
+import TextoPrincipal from "../components/TextoPrincipal.vue";
+import Formulario from "../components/Formulario.vue";
 </script>
 
 <template>
   <main>
-    <Home />
+    <TextoPrincipal/>
+    <Formulario/>
   </main>
 </template>

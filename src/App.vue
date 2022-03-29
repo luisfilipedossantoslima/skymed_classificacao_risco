@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import Rodape from './components/Rodape.vue'
+import Cabecalho from './components/Cabecalho.vue'
 
 </script>
 
 <template>
-  <header>    
-
+  <header>
+    <Cabecalho/>
     <div class="wrapper">
       <nav>
         <!-- <RouterLink to="/">Home</RouterLink>
