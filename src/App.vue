@@ -17,7 +17,7 @@ import Cabecalho from './components/Cabecalho.vue'
   </header>
 
   <RouterView />
-  <!-- <Rodape/> -->
+  <Rodape/>
 </template>
 
 <style>
