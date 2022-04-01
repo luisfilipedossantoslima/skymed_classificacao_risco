@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker stop classificacao_de_risco
-docker image rm classificacao_de_risco
 docker container prune -f
+docker image rm classificacao_de_risco
 docker build -t classificacao_de_risco /var/www/salux_classificacaoDeRisco_deploy
 docker run -it -d -p 80:80 --name classificacao_de_risco classificacao_de_risco
