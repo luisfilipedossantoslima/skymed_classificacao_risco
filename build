@@ -2,6 +2,6 @@
 
 docker stop classificacao_de_risco
 docker image rm classificacao_de_risco
-docker build -t classificacao_de_risco /var/www/classificacao_de_risco_deploy
+docker build -t classificacao_de_risco /var/www/classificacaoDeRisco_deploy
 docker container prune -f
 docker run -it -d -p 80:80 --name classificacao_de_risco classificacao_de_risco
