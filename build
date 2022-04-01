@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker build -t classificacao_de_risco .
-docker run -it -d -p 80:80  classificacao_de_risco
+docker run -it -d -p 80:80 --name classificacao_de_risco classificacao_de_risco
