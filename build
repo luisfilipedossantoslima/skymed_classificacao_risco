@@ -2,5 +2,5 @@
 
 docker build -t classificacao_de_risco .
 docker stop classificacao_de_risco
-docker container prune
+docker container prune -f
 docker run -it -d -p 80:80 --name classificacao_de_risco classificacao_de_risco
