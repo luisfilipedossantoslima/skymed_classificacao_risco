@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t classificacao_de_risco .
+docker run -it -p 80:80  classificacao_de_risco
