@@ -1,0 +1,27 @@
+name: Pipeline skymed classificacao de risco
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  pipe:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: SSH Command
+      uses: D3rHase/ssh-command-action@v0.2.1
+      with:
+        HOST: ${{secrets.SSH_HOST}}
+        USER: ${{secrets.SSH_USER}}
+        PRIVATE_SSH_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+        COMMAND: |
+          cd applications
+          rm -rf skymed_classificacao_risco 
+          git clone git@github.com:luisfilipedossantoslima/skymed_classificacao_risco.git
+          cd skymed_classificacao_risco
+          npm install
+          npm run build
+          npm rm -rf node_modules
+          docker-compose up -d
